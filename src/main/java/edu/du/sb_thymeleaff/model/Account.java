@@ -11,7 +11,7 @@ import lombok.Data;
 @Data
 public class Account {
     @Id
-    private Long id;
+    private String id;
 
     @Column(nullable = false)
     private String password;

@@ -17,18 +17,18 @@ public class AccountService {
     }
 
     // 로그인
-    @Autowired
-    private HttpSession session;
-
-    public boolean login(String id, String password) {
-        Account account = accountRepository.findByIdAndPassword(Long.parseLong(id), password);
-        if (account != null) {
-            session.setAttribute("user", account); // 로그인 성공 시 세션 저장
-            return true;
-        }
-        return false;
-    }
-    public void logout() {
-        session.invalidate();
-    }
+//    @Autowired
+//    private HttpSession session;
+//
+//    public boolean login(String id, String password) {
+//        Account account = accountRepository.findByIdAndPassword(Long.parseLong(id), password);
+//        if (account != null) {
+//            session.setAttribute("user", account); // 로그인 성공 시 세션 저장
+//            return true;
+//        }
+//        return false;
+//    }
+//    public void logout() {
+//        session.invalidate();
+//    }
 }
